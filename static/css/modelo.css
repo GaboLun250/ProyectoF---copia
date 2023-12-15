@@ -1,0 +1,250 @@
+body {
+    font-family: 'Microsoft Sans Serif', Microsoft Sans Serif;
+    margin: 0px;
+    padding: 0;
+    background-color: #000000;  
+    margin: 1cm; 
+}
+
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    align-items: center; 
+    color: #ffffff;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.headerI{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin-left: 1cm;
+}
+
+.logo1{
+
+    align-items: center;
+    width: 4cm;
+    height: 4cm;
+    margin-right: 3cm;
+
+}
+
+
+
+.logo2{
+
+    width: 4cm;
+    height: 5cm;
+    margin-left: 3cm;
+    
+}
+
+.title{
+
+    margin-right: 1cm;
+    font-size: 2cm;
+    text-align: center;
+}
+
+
+
+/* Estilo del título principal */
+h1 {
+    margin: 0; /* Elimina el margen predeterminado del título principal */
+    font-size: 8rem; /* Ajusta el tamaño del título principal */
+    font-family: 'Helvetica', Helvetica; /* La fuente que desees usar */
+}
+
+/* Estilo del subtítulo */
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Impact', Impact; /* La fuente que desees usar */
+    margin-top: -1.5cm;
+    font-size: .6cm;
+}
+
+/* Estilos de los párrafos */
+p {
+    margin-top: 0.4rem; /* Margen superior para todos los párrafos */
+}
+
+
+/* Estilos de los artículos de personajes */
+.character {
+    margin-top: 90px;   
+    position: relative; 
+    padding: 2rem;
+    width: 350px;
+    text-align: center;
+    font-family: 'Courier New', Courier New; /* La fuente que desees usar */  
+    
+    
+}
+
+.character:hover{
+
+    scale: 1.02;
+}
+
+#Jefe{
+    filter: drop-shadow(0px 0px 20px rgb(76, 134, 14));
+    transition: all 0.3s;
+}
+
+#Jefe:hover{
+    filter: drop-shadow(0px 0px 70px rgb(76, 134, 14));
+    transition: all 0.3s;
+}
+
+
+
+#cortana{
+
+    filter: drop-shadow(0px 0px 20px rgb(0, 179, 255));
+    transition: all 0.3s; 
+}
+
+#cortana:hover{
+    filter: drop-shadow(0px 0px 70px rgb(0, 179, 255));
+    transition: all 0.3s;
+}
+
+
+#Johnson{
+
+    filter: drop-shadow(0px 0px 20px rgb(0, 117, 35));
+    transition: all 0.3s;
+}
+
+#Johnson:hover{
+    filter: drop-shadow(0px 0px 70px rgb(0, 117, 35));
+    transition: all 0.3s;
+}
+
+#Inquisidor{
+
+    filter: drop-shadow(0px 0px 20px rgb(255, 187, 0));
+    transition: all 0.3s;
+}
+
+#Inquisidor:hover{
+    filter: drop-shadow(0px 0px 70px rgb(255, 187, 0));
+    transition: all 0.3s;
+}
+
+
+/* Ajuste del tamaño de las imágenes a 8x11 centímetros */
+.character img {
+   
+    width: 8cm;
+    height: 11cm;
+    object-fit: cover;
+    border-radius: 20px; 
+}
+
+/* Estilos adicionales para la información del personaje */
+.character-info {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+}
+
+/* Mostrar la información al pasar el cursor sobre el contenedor del personaje */
+.character:hover .character-info {
+    display: block;
+}
+
+.movbot{
+
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 1cm ;
+}
+
+button{
+
+    
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    font-size: 40px;
+    border-radius: 12px;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 1cm;
+}
+
+button::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgb(76, 134, 14), white, rgb(76, 134, 14), white,
+        rgb(76, 134, 14), white, rgb(76, 134, 14), white
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(5px);
+    animation: glowing 20s linear infinite;  
+}
+
+@keyframes glowing{
+
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 400% 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-content: center;
+   margin-top: 0.5cm;
+   margin-bottom: 1cm;
+   
+    
+}
+
+
+main{
+
+    background-color: #ff040400;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}

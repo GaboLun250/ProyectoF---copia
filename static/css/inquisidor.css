@@ -1,0 +1,574 @@
+body {
+    font-family: 'Microsoft Sans Serif', Microsoft Sans Serif;
+    margin: 0px;
+    padding: 0;
+    background-color: #000000;   
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    align-items: center; 
+    color: #ffffff;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.headerI{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin-left: 1cm;
+}
+
+.logo1{
+
+    align-items: center;
+    width: 4cm;
+    height: 4cm;
+    margin-right: 3cm;
+
+}
+
+
+
+.logo2{
+
+    width: 4cm;
+    height: 5cm;
+    margin-left: 3cm;
+    
+}
+
+.title{
+
+    margin-right: 1cm;
+    font-size: 2cm;
+    text-align: center;
+}
+
+/* Estilo del título principal */
+h1 {
+    margin: 0; /* Elimina el margen predeterminado del título principal */
+    font-size: 8rem; /* Ajusta el tamaño del título principal */
+    font-family: 'Helvetica', Helvetica; /* La fuente que desees usar */
+}
+
+/* Estilo del subtítulo */
+.subtitle {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Impact', Impact; /* La fuente que desees usar */
+    margin-top: -1.5cm;
+    font-size: .6cm;
+}
+
+/* Estilos de los párrafos */
+p {
+    margin-top: 0.4rem; /* Margen superior para todos los párrafos */
+}
+
+
+.ul{
+    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 1.5cm;/*Separación con el borde izquierdo del nombre del personaje*/
+    margin-bottom: -1cm;/*Separación con el borde superior del nombre del personaje*/
+}
+
+
+li{
+    list-style: none;
+    color: var(--main-color);
+    display: inline;
+    font-size: 3cm;
+    letter-spacing: 20px;
+    animation: pre-load 5s linear infinite;
+    
+}
+
+@keyframes pre-load{
+    0%{
+
+        color: var(--main-color);
+        text-shadow: none;
+    }
+
+    20%{
+        color: var(--main-color);
+        text-shadow: none;
+    }
+
+    40%{
+
+        color: rgb(171, 111, 0);
+        text-shadow: 0 0 7px rgb(137, 89, 0), 0 0 50px rgb(137, 89, 0) ;
+    }
+
+    60%{
+        color: var(--main-color);
+        text-shadow: none;
+    }
+
+    80%{
+        color: var(--main-color);
+        text-shadow: none;
+    }
+
+    100%{
+        color: var(--main-color);
+        text-shadow: none;
+    }
+
+    
+}
+
+li:nth-child(2){
+
+    animation-delay: 0.4s;
+}
+
+li:nth-child(3){
+
+    animation-delay: 0.6s;
+}
+
+ul li:nth-child(4){
+
+    animation-delay: 0.8s;
+}
+
+ul li:nth-child(5){
+
+    animation-delay: 1s;
+}
+
+ul li:nth-child(6){
+
+    animation-delay: 1.2s;
+}
+
+ul li:nth-child(7){
+
+    animation-delay: 1.4s;
+}
+
+ul li:nth-child(8){
+
+    animation-delay: 1.6s;
+}
+
+ul li:nth-child(9){
+
+    animation-delay: 1.8s;
+}
+
+ul li:nth-child(10){
+
+    animation-delay: 2s;
+}
+
+ul li:nth-child(11){
+
+    animation-delay: 2.2s;
+}
+
+ul li:nth-child(12){
+
+    animation-delay: 2.4s;
+}
+
+
+
+
+.conimg4{
+
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 16.8cm;
+    
+}
+
+
+.img4 {
+    
+    width: 18cm; /* Ajusta este valor según tu preferencia y la relación píxeles-centímetros */
+    height: 23cm; /* Calculado para mantener la proporción 9:11 */
+    object-fit: cover;
+    box-shadow: 0 0 100px rgb(255, 187, 0);
+    transition: all 0.5s;
+    border-radius: 1cm;
+    cursor: pointer;
+    filter: grayscale(.5);
+    transition: .3s linear;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: .8cm;
+    margin-top: -30cm;
+}
+
+.img4:hover{
+
+    scale: 1.01;
+    filter: grayscale(0);
+}
+
+
+.movbot4{
+
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 1cm ;
+    margin-bottom: 2cm;
+    margin-top: -7cm;
+}
+
+button{
+
+    
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    font-size: 40px;
+    border-radius: 12px;
+    margin-left: 12.5cm;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 3cm; 
+    
+}
+
+button::before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        rgb(255, 187, 0), white, rgb(255, 187, 0), white,
+        rgb(255, 187, 0), white, rgb(255, 187, 0), white
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(5px);
+    animation: glowing 20s linear infinite;  
+}
+
+@keyframes glowing{
+
+    0%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 400% 0;
+    }
+
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.info2 {
+    margin: 1cm;
+    margin-top: 1.5cm;
+    margin-bottom: 0cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900; /* Grosor de la letra */
+    font-size: 0.54cm;   /* Tamaño de la letra */
+}
+
+.info2:hover{
+
+    scale: 1.02;
+}
+.info3 {
+    margin: 1.5cm;
+    margin-top: .5cm;
+    margin-bottom: 0.5cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500; /* Grosor de la letra */
+    font-size: 0.5cm; /* Tamaño de la letra */
+    
+}
+
+.info3:hover{
+
+    scale: 1.02;
+}
+
+
+
+.info4 {
+    
+    margin: 2.5cm;
+    margin-top: 0cm;
+    margin-bottom: 0.1cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.info4:hover{
+
+    scale: 1.02;
+}
+
+
+
+.info5 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor3:hover{
+
+    scale: 1.02;
+}
+
+.info6 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor4:hover{
+
+    scale: 1.02;
+}
+
+.info7 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor5:hover{
+
+    scale: 1.02;
+}
+
+
+.info8 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor6:hover{
+
+    scale: 1.02;
+}
+
+
+.info9 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor7:hover{
+
+    scale: 1.02;
+}
+
+
+.info10 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor8:hover{
+
+    scale: 1.02;
+}
+
+
+.info11 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor9:hover{
+
+    scale: 1.02;
+}
+
+.info12 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor10:hover{
+
+    scale: 1.02;
+}
+
+.info13 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor11:hover{
+
+    scale: 1.02;
+}
+
+.info14 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.4cm; /* Tamaño de la letra */
+}
+
+.contenedor12:hover{
+
+    scale: 1.02;
+}
+
+.info15 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 520; /* Grosor de la letra */
+    font-size: 0.5cm; /* Tamaño de la letra */
+}
+
+.contenedor13:hover{
+
+    scale: 1.02;
+}
+
+
+.info16 {
+    
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    margin-left: 1.5cm;
+    margin-right: 2cm;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600; /* Grosor de la let ra */
+    font-size: 0.54cm; /* Tamaño de la letra */
+}
+
+.contenedor14:hover{
+
+    scale: 1.02;
+}
+
+main{
+
+    margin-top: 1cm;
+    background-color: rgba(255, 0, 0, 0);
+    margin-right: 20cm;
+}
+
+
+

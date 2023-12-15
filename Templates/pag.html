@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/modelo.css')}}">
+</head>
+<body>
+        <!-- Encabezado de la página -->
+        <header class="container">
+            <div class="headerI">
+                <img class="logo1" src="{{ url_for('static', filename='img/ONI_Logo.png') }}" alt="Left Image" class="left-image"> <!-- Ajusta la ruta de la imagen izquierda -->
+                <h1 class="title1">UNSC</h1>
+                <img class="logo2" src="{{ url_for('static', filename='img/UNSC_Logo.png') }}" alt="Right Image" class="right-image"> <!-- Ajusta la ruta de la imagen derecha -->
+            </div>
+            
+        </header>
+
+        <p class="subtitle">United Nations Space Command</p>
+        
+        <main>
+            
+            <div>
+                <!-- Artículo del Jefe Maestro -->
+                <div class="character" id="Jefe">
+                    <div class="character-info">
+                        <h2>Jefe Maestro</h2>
+                        <p>El Suboficial Jefe Maestro John-117, es un SPARTAN-II de la Armada del UNSC.</p>
+                    </div>
+                   <div><a href="http://127.0.0.1:1234/Jefe%20Maestro"><img src="{{ url_for('static', filename='img/master-chief.jpg') }}" alt="Master Chief"></a></div>
+                </div>
+            </div>
+
+            <div>
+                <!-- Artículo de Cortana -->
+                <article class="character" id="cortana">
+                    <div class="character-info">
+                        <h2>Cortana</h2>
+                        <p>Cortana se destaca por su aguda inteligencia, ingenio y, a veces, por su conexión emocional con el Jefe Maestro.</p>
+                    </div>
+                    <a href="http://127.0.0.1:1234/Cortana"><img src="{{ url_for('static', filename='img/cortana.jpg') }}" alt="Cortana"></a>
+                </article>
+            </div>
+
+
+            <div>
+                <!-- Artículo del Sgt. Johnson -->
+                <article class="character" id="Johnson">
+                    <div class="character-info">
+                        <h2>Sgt. Avery Johnson</h2>
+                        <p>El Sargento Mayor Avery Junior Johnson sirvió en el Cuerpo de Marines del UNSC durante la Insurrección y la Guerra Humano-Covenant.</p>
+                    </div>
+                    <a href="http://127.0.0.1:1234/Johnson"><img src="{{ url_for('static', filename='img/Sgt-Johnson.jpg') }}" alt="Sgt. Avery Johnson"></a>
+                </article>
+            </div>
+
+
+            <div><!-- Artículo del Inquisidor -->
+                <article class="character" id="Inquisidor">
+                    <div class="character-info">
+                        <h2>El Inquisidor</h2>
+                        <p>Sofocó las fuerzas herejes, lideró a los Covenant durante el Gran Cisma y fue compañero del Jefe Maestro en el final de la Guerra Humano-Covenant.</p>
+                    </div>
+                    <a href="http://127.0.0.1:1234/Inquisidor"><img src="{{ url_for('static', filename='img/arbiter.jpg') }}" alt="El Inquisidor"></a>
+                </article>
+            </div>
+
+        </main>
+
+            <div class="movbot"><a href="http://127.0.0.1:1234/"><button> Salir </button></a></div>
+ 
+        <!-- Pie de página -->
+        <footer>
+            <p>&copy; 2023 Halo Universe. All rights reserved.</p>
+        </footer>
+</body>
+</html>

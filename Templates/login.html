@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+
+    <header class="container">
+        <div class="headerI">
+            <img class="logo1" src="{{ url_for('static', filename='img/ONI_Logo.png') }}" alt="Left Image" class="left-image"> <!-- Ajusta la ruta de la imagen izquierda -->
+            <h1 class="title1">UNSC</h1>
+            <img class="logo2" src="{{ url_for('static', filename='img/UNSC_Logo.png') }}" alt="Right Image" class="right-image"> <!-- Ajusta la ruta de la imagen derecha -->
+        </div>
+        
+    </header>
+
+    <p class="subtitle">United Nations Space Command</p>
+
+    
+    <main>
+        
+        <div class="container">
+        
+            <div class="log">
+            <form method="post" action="{{ url_for('login') }}">
+                    <h2 class="lo">Log in</h2>
+                <label class="user" for="username">Usuario:</label>
+                <input class="bloqU" type="text" name="username" required>
+    
+                <label class="Contraseña" for="password">Contraseña:</label>
+                <input class="bloqC" type="password" name="password" required>
+    
+                <button class="bu" type="submit">Iniciar sesión</button>
+            </form>
+            </div>
+        <div>
+            <div class="cont">
+                <form method="post" action="{{ url_for('register') }}">
+                <div class="la">
+                    <h2 >Sign up</h2>
+                </div>
+                <label class="us1" for="username">Usuario:</label>
+                <input class="us2" type="text" name="username" required>
+    
+                <label class="contra1" for="password">Contraseña:</label>
+                <input class="contra2" type="password" name="password" required>
+    
+                <button class="br" type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+asdasd
+    <footer>
+        {% if error_message %}
+        <h2 class="error"> [ACCESO DENEGADO]</h2>
+        {% endif %}
+
+    </footer>
+</body>
+</html>

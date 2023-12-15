@@ -1,0 +1,293 @@
+body {
+    font-family: 'Microsoft Sans Serif', Microsoft Sans Serif;
+    margin: 0px;
+    padding: 0;
+    background-color: #000000;  
+    
+}
+
+
+/* Estilos del encabezado */
+header {
+    display: flex;
+    align-items: center; 
+    color: #ffffff;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.headerI{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    margin-left: 1cm;
+}
+
+.logo1{
+
+    align-items: center;
+    width: 4cm;
+    height: 4cm;
+    margin-right: 3cm;
+
+}
+
+
+
+.logo2{
+
+    width: 4cm;
+    height: 5cm;
+    margin-left: 3cm;
+    
+}
+
+.title{
+
+    margin-right: 1cm;
+    font-size: 2cm;
+    text-align: center;
+}
+
+/* Estilo del título principal */
+h1 {
+    margin: 0; /* Elimina el margen predeterminado del título principal */
+    font-size: 8rem; /* Ajusta el tamaño del título principal */
+    font-family: 'Helvetica', Helvetica; /* La fuente que desees usar */
+}
+
+/* Estilo del subtítulo */
+.subtitle {
+    font-size: 1.3rem;
+    margin-top: 0rem; /* Margen superior para el subtítulo */
+    font-family: 'Impact', Impact; /* La fuente que desees usar */
+}
+
+/* Estilos de los párrafos */
+p {
+    margin-top: 0.4rem; /* Margen superior para todos los párrafos */
+}
+
+
+
+
+
+
+
+.lo{ /*label Login*/
+
+    color: #ffffff;
+    
+}
+
+
+
+
+.log {    /*mover todo el bloque login*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 100px auto;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 27cm;
+    margin-bottom: 0cm;
+    margin-top: 7cm;
+    margin-right: 0cm;
+    border: solid 1.5px white;
+    
+}
+
+
+
+
+
+.cont {   /*mover todo el bloque Sign*/
+    display: grid;
+    place-items: absolute;
+    max-width: 400px;
+    margin: none;
+    background-color: #ff000000;
+    padding: 100px;
+    padding-bottom: 29px;
+    padding-left: 25px;
+    padding-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -9.35cm;
+    margin-left: 15cm;
+    margin-right: 0cm;
+    border: solid 1.5px white;
+    
+}
+
+
+label { /*label Usuario/Contraseña Login*/
+    display: block;
+    margin-bottom: 1px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.5cm;
+}
+
+input { /*Altura del cuadro Sign*/
+    width: 100%;
+    padding: 8px; 
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button { /*btn Iniciar/registrar*/
+    background-color: #336699;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffffff88;
+}
+
+.bloqU{ /*txtb Usuario login*/
+
+    border: solid 1px rgb(255, 255, 255);
+    background-color: #000000;
+    margin-top: 10px;
+    margin-bottom: 1cm;
+    color: #ffffff;
+    font-size: .5cm;
+}
+.bloqU:hover{
+
+    scale: 1.02;
+}
+
+
+.bloqC{ /*txtb Contraseña login*/
+
+    border: solid 1px rgb(255, 255, 255);
+    background-color: #000000;
+    margin-top: 10px;
+    margin-left: 0.14cm;
+    color: #fff;
+    font-size: .5cm;
+    
+    
+}
+
+.bloqC:hover{
+
+    scale: 1.02;
+}
+
+.bu{/*btn Iniciar Sesión*/
+
+    border: solid 1px #ffffff88;
+    margin-left: 7.9cm;
+    margin-top: 7px;
+    background-color: #000000;
+
+}
+
+.br{ /*btn Registrar*/
+
+    border: solid 1px #ffffff88;
+    margin-left: 8.39cm;
+    margin-top: 10px;
+    margin-bottom: -100px;
+    background-color: #000000;
+    
+}
+
+
+
+
+.us1{ /*label Usuario Sign*/
+
+    background-color: #000000;
+    margin-top: -2cm;
+    margin-left: -4px;
+
+}
+
+
+.us2{ /*txtb Usuario Sign*/
+
+    border: solid 1px white;
+    background-color: #ff000000;
+    margin-top: 0.283cm;
+    margin-bottom: 0.95cm;
+    margin-left: -0.1cm;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .5cm;
+}
+
+.us2:hover{
+
+    scale: 1.02;
+}
+
+
+.contra1{ /*label contraseña Sign*/
+
+    background-color: #000000;
+    margin-top: 2px;
+    margin-left: -4px;
+}
+
+.contra2{ /*txtb Contraseña sign*/
+
+    border: solid 1px rgb(255, 255, 255);
+    background-color: #000000;
+    margin-top: 10px;
+    color: #fff;
+    font-size: .5cm;
+}
+
+
+.contra2:hover{
+
+        scale: 1.02;
+    
+}
+
+.la{ /*label Sign*/
+
+    color: #ffffff;
+      
+    margin-top: -2.1cm;
+    margin-bottom: 2.5cm; 
+    
+}  
+
+.error {
+    
+    background-color: #ff0000;
+    margin-left: 10cm ;
+    margin-right: 10cm;
+    text-align: center;
+    align-content: center;
+    font-size: 1cm;
+}
+
+
+
+main{
+    display: grid;
+    margin-top: -7cm;
+    margin-left: 0cm;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15cm;
+}
+
+
